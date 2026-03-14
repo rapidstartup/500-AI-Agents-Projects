@@ -1,0 +1,20 @@
+{
+  "name": "mastra-job-posting-generator",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of CrewAI Job Posting Generator - Single agent pattern",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "node --experimental-vm-modules dist/index.js",
+    "demo": "npx tsx run_demo.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

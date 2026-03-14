@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>500+ AI Agent Projects Database</title>
+<meta name="description" content="Interactive searchable database of 500+ AI agent use cases across industries, frameworks, and applications.">
+<meta property="og:title" content="500+ AI Agent Projects Database">
+<meta property="og:description" content="Explore AI agents transforming healthcare, finance, education, and more.">
+<meta property="og:image" content="images/AIAgentUseCase.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg-primary:#0a0e1a;
+  --bg-secondary:#111827;
+  --bg-card:#1a2035;
+  --bg-card-hover:#1f2847;
+  --border-color:#2a3555;
+  --text-primary:#e8ecf4;
+  --text-secondary:#8b9dc3;
+  --text-muted:#5a6a8a;
+  --accent-glow:rgba(99,179,237,0.15);
+  --radius:12px;
+  --radius-sm:8px;
+  --transition:0.2s ease;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--bg-primary);
+  color:var(--text-primary);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+
+/* --- HERO --- */
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:4rem 2rem 3rem;
+  text-align:center;
+  background:linear-gradient(135deg,#0a0e1a 0%,#111d3a 50%,#0a0e1a 100%);
+  border-bottom:1px solid var(--border-color);
+}
+.hero::before{
+  content:'';
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 30%,rgba(56,119,224,0.1),transparent 70%);
+  pointer-events:none;
+}
+.hero-mindmap{
+  max-width:800px;
+  width:100%;
+  margin:0 auto 2rem;
+  border-radius:var(--radius);
+  opacity:0.85;
+  border:1px solid var(--border-color);
+}
+.hero h1{
+  font-size:clamp(1.8rem,4vw,3rem);
+  font-weight:800;
+  letter-spacing:-0.03em;
+  margin-bottom:0.5rem;
+  background:linear-gradient(135deg,#e8ecf4,#63b3ed);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero p{
+  color:var(--text-secondary);
+  max-width:650px;
+  margin:0 auto 2rem;
+  font-size:1.05rem;
+}
+.stats-row{
+  display:flex;
+  justify-content:center;
+  gap:2.5rem;
+  flex-wrap:wrap;
+}
+.stat{text-align:center}
+.stat-num{
+  font-size:2rem;
+  font-weight:800;
+  font-family:'JetBrains Mono','Inter',monospace;
+  background:linear-gradient(135deg,#63b3ed,#a78bfa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.stat-label{
+  font-size:0.8rem;
+  color:var(--text-muted);
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  margin-top:2px;
+}
+
+/* --- STICKY FILTER BAR --- */
+.filter-bar{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(10,14,26,0.92);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border-color);
+  padding:1rem 2rem;
+}
+.filter-inner{
+  max-width:1400px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+}
+.filter-row{
+  display:flex;
+  align-items:center;
+  gap:0.75rem;
+  flex-wrap:wrap;
+}
+.search-wrap{
+  position:relative;
+  flex:1;
+  min-width:220px;
+}
+.search-wrap svg{
+  position:absolute;
+  left:12px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--text-muted);
+  pointer-events:none;
+}
+#searchInput{
+  width:100%;
+  padding:0.65rem 0.75rem 0.65rem 2.5rem;
+  background:var(--bg-secondary);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius-sm);
+  color:var(--text-primary);
+  font-size:0.9rem;
+  font-family:inherit;
+  outline:none;
+  transition:border-color var(--transition);
+}
+#searchInput:focus{border-color:#63b3ed}
+#searchInput::placeholder{color:var(--text-muted)}
+
+.filter-pills{
+  display:flex;
+  gap:0.4rem;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.filter-pills .label{
+  font-size:0.75rem;
+  color:var(--text-muted);
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+  margin-right:0.25rem;
+  white-space:nowrap;
+}
+.pill{
+  padding:0.35rem 0.85rem;
+  border-radius:50px;
+  font-size:0.78rem;
+  font-weight:600;
+  cursor:pointer;
+  border:1px solid var(--border-color);
+  background:transparent;
+  color:var(--text-secondary);
+  transition:all var(--transition);
+  user-select:none;
+  white-space:nowrap;
+}
+.pill:hover{border-color:#63b3ed;color:var(--text-primary)}
+.pill.active{color:#fff;border-color:transparent}
+
+select.filter-select{
+  padding:0.45rem 2rem 0.45rem 0.75rem;
+  background:var(--bg-secondary);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius-sm);
+  color:var(--text-secondary);
+  font-size:0.82rem;
+  font-family:inherit;
+  cursor:pointer;
+  outline:none;
+  appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%235a6a8a' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5.5l6.5 6 6.5-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 10px center;
+  transition:border-color var(--transition);
+}
+select.filter-select:focus{border-color:#63b3ed}
+
+.result-count{
+  font-size:0.82rem;
+  color:var(--text-muted);
+  white-space:nowrap;
+  margin-left:auto;
+}
+.result-count strong{color:var(--text-secondary)}
+
+#clearFilters{
+  padding:0.4rem 0.9rem;
+  border-radius:var(--radius-sm);
+  font-size:0.78rem;
+  font-weight:600;
+  cursor:pointer;
+  border:1px solid rgba(239,68,68,0.4);
+  background:rgba(239,68,68,0.1);
+  color:#f87171;
+  transition:all var(--transition);
+  display:none;
+  white-space:nowrap;
+}
+#clearFilters:hover{background:rgba(239,68,68,0.2);border-color:rgba(239,68,68,0.6)}
+#clearFilters.visible{display:inline-flex}
+
+/* --- CARD GRID --- */
+.grid-section{
+  max-width:1400px;
+  margin:0 auto;
+  padding:2rem;
+}
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(340px,1fr));
+  gap:1.25rem;
+}
+.card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:var(--radius);
+  padding:1.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:0.75rem;
+  transition:all 0.25s ease;
+  opacity:0;
+  transform:translateY(12px);
+  animation:cardIn 0.35s ease forwards;
+}
+.card:hover{
+  border-color:#3b6cce;
+  background:var(--bg-card-hover);
+  transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+@keyframes cardIn{
+  to{opacity:1;transform:translateY(0)}
+}
+.card-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:0.75rem;
+}
+.card-name{
+  font-size:1rem;
+  font-weight:700;
+  line-height:1.35;
+  flex:1;
+}
+.card-badges{
+  display:flex;
+  gap:0.4rem;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:0.2rem 0.6rem;
+  border-radius:50px;
+  font-size:0.68rem;
+  font-weight:600;
+  letter-spacing:0.02em;
+  white-space:nowrap;
+}
+.badge-framework{color:#fff}
+.badge-industry{
+  background:rgba(139,157,195,0.12);
+  color:var(--text-secondary);
+  border:1px solid rgba(139,157,195,0.15);
+}
+.badge-category{
+  background:rgba(167,139,250,0.1);
+  color:#c4b5fd;
+  border:1px solid rgba(167,139,250,0.2);
+  font-size:0.65rem;
+}
+.card-desc{
+  color:var(--text-secondary);
+  font-size:0.87rem;
+  line-height:1.55;
+  flex:1;
+}
+.card-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:0.5rem;
+  margin-top:auto;
+  padding-top:0.75rem;
+  border-top:1px solid rgba(42,53,85,0.5);
+}
+.card-tags{
+  display:flex;
+  gap:0.3rem;
+  flex-wrap:wrap;
+  flex:1;
+  overflow:hidden;
+}
+.tag{
+  font-size:0.65rem;
+  color:var(--text-muted);
+  background:rgba(90,106,138,0.12);
+  padding:0.15rem 0.45rem;
+  border-radius:4px;
+  white-space:nowrap;
+}
+.card-link{
+  display:inline-flex;
+  align-items:center;
+  gap:0.35rem;
+  padding:0.4rem 0.85rem;
+  border-radius:var(--radius-sm);
+  font-size:0.78rem;
+  font-weight:600;
+  color:#63b3ed;
+  background:rgba(99,179,237,0.08);
+  border:1px solid rgba(99,179,237,0.2);
+  transition:all var(--transition);
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.card-link:hover{
+  background:rgba(99,179,237,0.18);
+  border-color:rgba(99,179,237,0.4);
+}
+.card-link svg{width:14px;height:14px}
+
+.no-results{
+  grid-column:1/-1;
+  text-align:center;
+  padding:4rem 2rem;
+  color:var(--text-muted);
+}
+.no-results h3{
+  font-size:1.3rem;
+  color:var(--text-secondary);
+  margin-bottom:0.5rem;
+}
+
+/* --- FOOTER --- */
+footer{
+  text-align:center;
+  padding:3rem 2rem;
+  border-top:1px solid var(--border-color);
+  color:var(--text-muted);
+  font-size:0.85rem;
+}
+footer a{color:#63b3ed;transition:color var(--transition)}
+footer a:hover{color:#90cdf4}
+footer .footer-links{
+  display:flex;
+  justify-content:center;
+  gap:1.5rem;
+  margin-bottom:1rem;
+  flex-wrap:wrap;
+}
+
+/* --- RESPONSIVE --- */
+@media(max-width:768px){
+  .hero{padding:2.5rem 1rem 2rem}
+  .filter-bar{padding:0.75rem 1rem}
+  .grid-section{padding:1rem}
+  .card-grid{grid-template-columns:1fr}
+  .stats-row{gap:1.5rem}
+  .stat-num{font-size:1.5rem}
+  .filter-row{gap:0.5rem}
+  .result-count{margin-left:0;width:100%}
+}
+@media(max-width:480px){
+  .card-grid{grid-template-columns:1fr}
+  .hero h1{font-size:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/industry_usecase1.png" alt="AI Agent Industry Use Case Mindmap" class="hero-mindmap" loading="lazy">
+  <h1>500+ AI Agent Projects</h1>
+  <p>Interactive database of AI agent use cases across industries. Search, filter, and discover open-source implementations.</p>
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Agents</div></div>
+    <div class="stat"><div class="stat-num" id="statFrameworks">0</div><div class="stat-label">Frameworks</div></div>
+    <div class="stat"><div class="stat-num" id="statIndustries">0</div><div class="stat-label">Industries</div></div>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <div class="filter-row">
+      <div class="search-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="Search agents by name, description, or tags...">
+      </div>
+      <select id="industrySelect" class="filter-select"><option value="">All Industries</option></select>
+      <select id="categorySelect" class="filter-select"><option value="">All Categories</option></select>
+      <button id="clearFilters">Clear Filters</button>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+    <div class="filter-row">
+      <div class="filter-pills" id="frameworkPills">
+        <span class="label">Framework</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GRID -->
+<main class="grid-section">
+  <div class="card-grid" id="cardGrid"></div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="https://github.com/ashishpatel26/500-AI-Agents-Projects" target="_blank" rel="noopener">GitHub Repository</a>
+    <a href="CONTRIBUTION.md">Contributing</a>
+    <a href="LICENSE">MIT License</a>
+  </div>
+  <p>Data sourced from <strong>agents.json</strong> &mdash; add new agents there and they appear here automatically.</p>
+</footer>
+
+<script>
+(function(){
+  const FRAMEWORK_COLORS = [
+    '#3b82f6','#10b981','#a855f7','#f97316','#14b8a6',
+    '#ec4899','#eab308','#ef4444','#06b6d4','#8b5cf6',
+    '#22c55e','#f59e0b','#6366f1','#d946ef','#0ea5e9'
+  ];
+
+  let allAgents = [];
+  let activeFrameworks = new Set();
+
+  const searchInput = document.getElementById('searchInput');
+  const industrySelect = document.getElementById('industrySelect');
+  const categorySelect = document.getElementById('categorySelect');
+  const frameworkPills = document.getElementById('frameworkPills');
+  const cardGrid = document.getElementById('cardGrid');
+  const resultCount = document.getElementById('resultCount');
+  const clearBtn = document.getElementById('clearFilters');
+
+  function getFrameworkColor(framework, frameworks) {
+    const idx = frameworks.indexOf(framework);
+    return FRAMEWORK_COLORS[idx % FRAMEWORK_COLORS.length];
+  }
+
+  function buildFilters(agents) {
+    const frameworks = [...new Set(agents.map(a => a.framework))].sort();
+    const industryGroups = [...new Set(agents.map(a => a.industryGroup))].sort();
+    const categories = [...new Set(agents.map(a => a.category).filter(Boolean))].sort();
+
+    frameworks.forEach(fw => {
+      const pill = document.createElement('button');
+      pill.className = 'pill';
+      pill.textContent = fw;
+      pill.dataset.framework = fw;
+      const color = getFrameworkColor(fw, frameworks);
+      pill.addEventListener('click', () => {
+        if (activeFrameworks.has(fw)) {
+          activeFrameworks.delete(fw);
+          pill.classList.remove('active');
+          pill.style.background = '';
+          pill.style.borderColor = '';
+        } else {
+          activeFrameworks.add(fw);
+          pill.classList.add('active');
+          pill.style.background = color;
+          pill.style.borderColor = color;
+        }
+        applyFilters();
+      });
+      frameworkPills.appendChild(pill);
+    });
+
+    industryGroups.forEach(ig => {
+      const opt = document.createElement('option');
+      opt.value = ig;
+      opt.textContent = ig;
+      industrySelect.appendChild(opt);
+    });
+
+    categories.forEach(cat => {
+      const opt = document.createElement('option');
+      opt.value = cat;
+      opt.textContent = cat;
+      categorySelect.appendChild(opt);
+    });
+
+    document.getElementById('statTotal').textContent = agents.length;
+    document.getElementById('statFrameworks').textContent = frameworks.length;
+    document.getElementById('statIndustries').textContent = industryGroups.length;
+
+    return frameworks;
+  }
+
+  function createCard(agent, frameworks) {
+    const card = document.createElement('article');
+    card.className = 'card';
+
+    const fwColor = getFrameworkColor(agent.framework, frameworks);
+    const isNotebook = agent.urlType === 'notebook';
+    const linkLabel = isNotebook ? 'Notebook' : 'GitHub';
+    const linkIcon = isNotebook
+      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 4v16"/><path d="M12 8h4"/><path d="M12 12h4"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A12 12 0 0012 .3"/></svg>';
+
+    const tagsHTML = (agent.tags || []).slice(0, 4).map(t => `<span class="tag">${t}</span>`).join('');
+    const categoryBadge = agent.category
+      ? `<span class="badge badge-category">${agent.category}</span>`
+      : '';
+
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="card-name">${agent.name}</div>
+      </div>
+      <div class="card-badges">
+        <span class="badge badge-framework" style="background:${fwColor}">${agent.framework}</span>
+        <span class="badge badge-industry">${agent.industry}</span>
+        ${categoryBadge}
+      </div>
+      <div class="card-desc">${agent.description}</div>
+      <div class="card-footer">
+        <div class="card-tags">${tagsHTML}</div>
+        <a href="${agent.url}" target="_blank" rel="noopener" class="card-link">${linkIcon} ${linkLabel}</a>
+      </div>
+    `;
+    return card;
+  }
+
+  function applyFilters() {
+    const query = searchInput.value.toLowerCase().trim();
+    const industry = industrySelect.value;
+    const category = categorySelect.value;
+    const hasFilters = query || industry || category || activeFrameworks.size > 0;
+
+    clearBtn.classList.toggle('visible', hasFilters);
+
+    const filtered = allAgents.filter(agent => {
+      if (activeFrameworks.size > 0 && !activeFrameworks.has(agent.framework)) return false;
+      if (industry && agent.industryGroup !== industry) return false;
+      if (category && agent.category !== category) return false;
+      if (query) {
+        const haystack = [
+          agent.name,
+          agent.description,
+          agent.industry,
+          agent.framework,
+          agent.category,
+          ...(agent.tags || [])
+        ].join(' ').toLowerCase();
+        if (!haystack.includes(query)) return false;
+      }
+      return true;
+    });
+
+    renderCards(filtered);
+    resultCount.innerHTML = `Showing <strong>${filtered.length}</strong> of <strong>${allAgents.length}</strong> agents`;
+    updateHash();
+  }
+
+  function renderCards(agents) {
+    cardGrid.innerHTML = '';
+    const frameworks = [...new Set(allAgents.map(a => a.framework))].sort();
+
+    if (agents.length === 0) {
+      cardGrid.innerHTML = `
+        <div class="no-results">
+          <h3>No agents found</h3>
+          <p>Try adjusting your search or filters.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    agents.forEach((agent, i) => {
+      const card = createCard(agent, frameworks);
+      card.style.animationDelay = `${Math.min(i * 0.03, 0.6)}s`;
+      fragment.appendChild(card);
+    });
+    cardGrid.appendChild(fragment);
+  }
+
+  function updateHash() {
+    const params = new URLSearchParams();
+    const q = searchInput.value.trim();
+    if (q) params.set('q', q);
+    if (industrySelect.value) params.set('industry', industrySelect.value);
+    if (categorySelect.value) params.set('category', categorySelect.value);
+    if (activeFrameworks.size) params.set('fw', [...activeFrameworks].join(','));
+    const hash = params.toString();
+    history.replaceState(null, '', hash ? '#' + hash : location.pathname);
+  }
+
+  function restoreHash() {
+    const hash = location.hash.slice(1);
+    if (!hash) return;
+    const params = new URLSearchParams(hash);
+    if (params.has('q')) searchInput.value = params.get('q');
+    if (params.has('industry')) industrySelect.value = params.get('industry');
+    if (params.has('category')) categorySelect.value = params.get('category');
+    if (params.has('fw')) {
+      params.get('fw').split(',').forEach(fw => {
+        activeFrameworks.add(fw);
+        const pill = frameworkPills.querySelector(`[data-framework="${fw}"]`);
+        if (pill) {
+          pill.classList.add('active');
+          const frameworks = [...new Set(allAgents.map(a => a.framework))].sort();
+          const color = getFrameworkColor(fw, frameworks);
+          pill.style.background = color;
+          pill.style.borderColor = color;
+        }
+      });
+    }
+  }
+
+  let debounceTimer;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(applyFilters, 150);
+  });
+  industrySelect.addEventListener('change', applyFilters);
+  categorySelect.addEventListener('change', applyFilters);
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    industrySelect.value = '';
+    categorySelect.value = '';
+    activeFrameworks.clear();
+    frameworkPills.querySelectorAll('.pill').forEach(p => {
+      p.classList.remove('active');
+      p.style.background = '';
+      p.style.borderColor = '';
+    });
+    applyFilters();
+  });
+
+  fetch('data/agents.json')
+    .then(r => r.json())
+    .then(data => {
+      allAgents = data;
+      const frameworks = buildFilters(data);
+      restoreHash();
+      applyFilters();
+    })
+    .catch(err => {
+      cardGrid.innerHTML = `<div class="no-results"><h3>Failed to load agent data</h3><p>${err.message}</p></div>`;
+    });
+})();
+</script>
+</body>
+</html>
