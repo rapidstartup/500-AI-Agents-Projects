@@ -1,0 +1,26 @@
+{
+  "name": "mastra-autogen-rag-group-chat",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of AutoGen RAG Group Chat - Supervisor + RAG with retrieval augmented generation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "node --experimental-vm-modules dist/index.js",
+    "demo": "npx tsx run_demo.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "latest",
+    "@mastra/memory": "latest",
+    "@mastra/libsql": "latest",
+    "@mastra/rag": "latest",
+    "@mastra/pg": "latest",
+    "ai": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

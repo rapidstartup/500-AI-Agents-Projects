@@ -1,0 +1,21 @@
+{
+  "name": "mastra-langgraph-plan-and-execute",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of LangGraph Plan-and-Execute Agent - Planning workflow with planner and executor agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "node --experimental-vm-modules dist/index.js",
+    "demo": "npx tsx run_demo.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

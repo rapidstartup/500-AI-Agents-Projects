@@ -1,0 +1,19 @@
+{
+  "name": "health-insights-agent",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of HIA (Health Insights Agent) - analyzes medical reports and provides health insights",
+  "type": "module",
+  "main": "src/mastra/index.ts",
+  "scripts": {
+    "start": "tsx src/mastra/index.ts",
+    "dev": "tsx watch src/mastra/index.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

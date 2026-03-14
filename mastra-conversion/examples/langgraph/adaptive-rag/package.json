@@ -1,0 +1,25 @@
+{
+  "name": "mastra-langgraph-adaptive-rag",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of LangGraph Adaptive RAG - Conditional RAG workflow with vector search, grading, and web search fallback",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "node --experimental-vm-modules dist/index.js",
+    "demo": "npx tsx run_demo.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "latest",
+    "@mastra/pg": "latest",
+    "@mastra/rag": "latest",
+    "ai": "latest",
+    "duck-duck-scrape": "^2.2.7",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

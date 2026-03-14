@@ -1,0 +1,23 @@
+{
+  "name": "mastra-trip-planner",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of CrewAI Trip Planner - Supervisor pattern with research and writing agents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "node --experimental-vm-modules dist/index.js",
+    "demo:supervisor": "npx tsx run_demo.ts supervisor",
+    "demo:workflow": "npx tsx run_demo.ts workflow"
+  },
+  "dependencies": {
+    "@mastra/core": "latest",
+    "@mastra/memory": "latest",
+    "@mastra/libsql": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

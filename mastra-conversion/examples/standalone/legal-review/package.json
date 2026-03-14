@@ -1,0 +1,23 @@
+{
+  "name": "mastra-legal-review",
+  "version": "1.0.0",
+  "description": "MASTRA conversion of firica/legalai - Legal Document Review Assistant with RAG for legal precedents",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/mastra/index.js",
+    "demo": "tsx src/mastra/index.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "latest",
+    "@mastra/rag": "latest",
+    "@mastra/pg": "latest",
+    "ai": "latest",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

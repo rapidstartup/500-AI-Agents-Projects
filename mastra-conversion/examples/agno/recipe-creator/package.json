@@ -1,0 +1,18 @@
+{
+  "name": "agno-recipe-creator",
+  "version": "1.0.0",
+  "description": "Mastra conversion of Agno Recipe Creator agent with structured output",
+  "type": "module",
+  "main": "dist/mastra/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.0.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
