@@ -757,7 +757,7 @@
     "description": "Demonstrates automated task-solving by generating, executing, and debugging code.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_auto_feedback_from_code_execution",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Code Generation",
     "tags": [
       "code-generation",
@@ -774,7 +774,7 @@
     "description": "Generates code and answers questions using retrieval-augmented methods.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_RetrieveChat",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Code Generation",
     "tags": [
       "code-generation",
@@ -791,7 +791,7 @@
     "description": "Utilizes Qdrant for enhanced retrieval-augmented agent performance.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_RetrieveChat_qdrant",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Code Generation",
     "tags": [
       "code-generation",
@@ -808,7 +808,7 @@
     "description": "Demonstrates group task-solving via multi-agent collaboration.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "group-chat",
@@ -825,7 +825,7 @@
     "description": "Uses multi-agent collaboration to create data visualizations.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_vis",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "data-visualization",
@@ -842,7 +842,7 @@
     "description": "Solves complex tasks collaboratively with a larger group of agents.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_research",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "group-chat",
@@ -859,7 +859,7 @@
     "description": "Combines coding and planning agents for solving tasks effectively.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_planning.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "coding",
@@ -876,7 +876,7 @@
     "description": "Uses predefined transition paths in a graph for solving tasks.",
     "url": "https://microsoft.github.io/autogen/docs/notebooks/agentchat_groupchat_finite_state_machine",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "graph",
@@ -893,7 +893,7 @@
     "description": "Simulates inner-monologue for problem-solving using group chats.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_society_of_mind",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "inner-monologue",
@@ -910,7 +910,7 @@
     "description": "Implements a custom function for speaker selection in group chats.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_customized",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multi-Agent Collaboration",
     "tags": [
       "group-chat",
@@ -927,7 +927,7 @@
     "description": "Automates sequential task-solving with a single initiating agent.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_multi_task_chats",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Sequential Multi-Agent Chats",
     "tags": [
       "sequential",
@@ -944,7 +944,7 @@
     "description": "Handles asynchronous task-solving in a sequence of chats initiated by one agent.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_multi_task_async_chats",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Sequential Multi-Agent Chats",
     "tags": [
       "async",
@@ -961,7 +961,7 @@
     "description": "Facilitates sequential task-solving with different agents initiating each chat.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchats_sequential_chats",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Sequential Multi-Agent Chats",
     "tags": [
       "sequential",
@@ -978,7 +978,7 @@
     "description": "Uses nested chats to solve hierarchical and complex problems.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nestedchat",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Nested Chats",
     "tags": [
       "nested-chats",
@@ -995,7 +995,7 @@
     "description": "Demonstrates sequential task-solving using nested chats.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nested_sequential_chats",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Nested Chats",
     "tags": [
       "nested-chats",
@@ -1011,7 +1011,7 @@
     "description": "Showcases how to solve supply chain optimization problems using nested chats, a coding agent, and a safeguard agent.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nestedchat_optiguide",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Nested Chats",
     "tags": [
       "supply-chain",
@@ -1028,7 +1028,7 @@
     "description": "Explores the use of nested chats for playing conversational chess with integrated tools.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nested_chats_chess",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Nested Chats",
     "tags": [
       "chess",
@@ -1045,7 +1045,7 @@
     "description": "Continuously learns from new data inputs for adaptive AI.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_stream.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Application",
     "tags": [
       "continual-learning",
@@ -1062,7 +1062,7 @@
     "description": "Highlights a solution combining coding, tool use, and safeguarding for supply chain optimization.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nestedchat_optiguide",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Application",
     "tags": [
       "supply-chain",
@@ -1079,7 +1079,7 @@
     "description": "Showcases the development of a Discord bot using AutoGen for enhanced interaction.",
     "url": "https://github.com/microsoft/autogen/tree/main/samples/apps/auto-anny",
     "urlType": "github",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Application",
     "tags": [
       "discord",
@@ -1096,7 +1096,7 @@
     "description": "Searches the web to gather information required for completing tasks.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_web_info.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "web-search",
@@ -1112,7 +1112,7 @@
     "description": "Demonstrates how to use pre-provided tools as callable functions in AutoGen.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_function_call_currency_calculator",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "function-calling",
@@ -1128,7 +1128,7 @@
     "description": "Illustrates synchronous and asynchronous tool usage within AutoGen workflows.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_function_call_async",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "async",
@@ -1145,7 +1145,7 @@
     "description": "Leverages Langchain tools for task-solving within AutoGen.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_langchain.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "langchain",
@@ -1161,7 +1161,7 @@
     "description": "Enables group chat with Retrieval Augmented Generation (RAG) to support information sharing.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_groupchat_RAG",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "rag",
@@ -1178,7 +1178,7 @@
     "description": "Allows AutoGen agents to modify their functions dynamically during conversations.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_inception_function.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "dynamic-functions",
@@ -1194,7 +1194,7 @@
     "description": "Demonstrates AI agent capabilities for transcription and translation using Whisper.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_video_transcript_translate_with_whisper",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "whisper",
@@ -1211,7 +1211,7 @@
     "description": "Shows how to use guidance to constrain responses generated by agents.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_guidance.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "guidance",
@@ -1228,7 +1228,7 @@
     "description": "Explains how to configure agents to browse and retrieve information from the web.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_surfer.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "web-browsing",
@@ -1244,7 +1244,7 @@
     "description": "Converts natural language inputs into SQL queries using the Spider benchmark.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_sql_spider.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "sql",
@@ -1261,7 +1261,7 @@
     "description": "Illustrates web scraping techniques with Apify using AutoGen.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_webscraping_with_apify",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "web-scraping",
@@ -1277,7 +1277,7 @@
     "description": "Explains how to crawl entire domains using the Spider API.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_webcrawling_with_spider",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "web-crawling",
@@ -1294,7 +1294,7 @@
     "description": "Builds a software application step-by-step using designed functions.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_function_call_code_writing.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Tools",
     "tags": [
       "software-development",
@@ -1310,7 +1310,7 @@
     "description": "Demonstrates a simple conversational example in the style of ChatGPT.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/samples/simple_chat.py",
     "urlType": "github",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Human Development",
     "tags": [
       "chatgpt",
@@ -1326,7 +1326,7 @@
     "description": "Showcases code generation, execution, debugging with human feedback integrated into the workflow.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_human_feedback.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Human Development",
     "tags": [
       "code-generation",
@@ -1343,7 +1343,7 @@
     "description": "Enables task solving with multiple human users collaborating with GPT-4.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_two_users.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Human Development",
     "tags": [
       "gpt-4",
@@ -1360,7 +1360,7 @@
     "description": "Supports asynchronous human input during agent conversations.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/Async_human_input.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Human Development",
     "tags": [
       "async",
@@ -1377,7 +1377,7 @@
     "description": "Demonstrates teaching new skills to agents and enabling their reuse in automated chats.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_teaching",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Agent Teaching and Learning",
     "tags": [
       "teaching",
@@ -1394,7 +1394,7 @@
     "description": "Shows how to teach agents new facts, user preferences, and non-coding skills.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_teachability",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Agent Teaching and Learning",
     "tags": [
       "teachability",
@@ -1411,7 +1411,7 @@
     "description": "Illustrates how to enhance OpenAI assistants' capabilities using GPTAssistantAgent.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_teachable_oai_assistants.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Agent Teaching and Learning",
     "tags": [
       "openai",
@@ -1428,7 +1428,7 @@
     "description": "Explains how to train agents effectively in an agentic manner using the Agent Optimizer.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_agentoptimizer.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Agent Teaching and Learning",
     "tags": [
       "optimization",
@@ -1444,7 +1444,7 @@
     "description": "A basic example of chatting with OpenAI Assistant using AutoGen.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_twoagents_basic.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "OpenAI Assistants",
     "tags": [
       "openai",
@@ -1461,7 +1461,7 @@
     "description": "Illustrates how to use function calls with OpenAI Assistant in chats.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_function_call.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "OpenAI Assistants",
     "tags": [
       "openai",
@@ -1478,7 +1478,7 @@
     "description": "Demonstrates the use of OpenAI Assistant as a code interpreter in chats.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_code_interpreter.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "OpenAI Assistants",
     "tags": [
       "openai",
@@ -1494,7 +1494,7 @@
     "description": "Enables retrieval-augmented conversations with OpenAI Assistant.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_retrieval.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "OpenAI Assistants",
     "tags": [
       "openai",
@@ -1511,7 +1511,7 @@
     "description": "Shows how OpenAI Assistant can collaborate with other agents in a group chat.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_oai_assistant_groupchat.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "OpenAI Assistants",
     "tags": [
       "openai",
@@ -1528,7 +1528,7 @@
     "description": "Explains how to use GPTAssistantAgent for multi-agent tool usage.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/gpt_assistant_agent_function_call.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "OpenAI Assistants",
     "tags": [
       "gpt-assistant",
@@ -1545,7 +1545,7 @@
     "description": "Explores conversational chess implemented with non-OpenAI models.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_nested_chats_chess_altmodels",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Non-OpenAI Models",
     "tags": [
       "chess",
@@ -1562,7 +1562,7 @@
     "description": "Combines DALLE and GPT-4V for multimodal agent communication.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_dalle_and_gpt4v.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multimodal Agent",
     "tags": [
       "dalle",
@@ -1579,7 +1579,7 @@
     "description": "Uses Llava for enabling multimodal agent conversations with image processing.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_lmm_llava.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multimodal Agent",
     "tags": [
       "llava",
@@ -1596,7 +1596,7 @@
     "description": "Leverages GPT-4V for visual and conversational interactions in multimodal agents.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_lmm_gpt-4v.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Multimodal Agent",
     "tags": [
       "gpt-4v",
@@ -1613,7 +1613,7 @@
     "description": "Demonstrates techniques for handling long context effectively within AI workflows.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/notebooks/agentchat_transform_messages",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Long Context Handling",
     "tags": [
       "long-context",
@@ -1629,7 +1629,7 @@
     "description": "Introduces AgentEval for evaluating and assessing the performance of LLM-based applications.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agenteval_cq_math.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Evaluation and Assessment",
     "tags": [
       "evaluation",
@@ -1646,7 +1646,7 @@
     "description": "Explains how to automatically build multi-agent systems using the AgentBuilder tool.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/autobuild_basic.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Automatic Agent Building",
     "tags": [
       "agent-builder",
@@ -1662,7 +1662,7 @@
     "description": "Shows how to construct multi-agent systems by leveraging a pre-defined agent library.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/autobuild_agent_library.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Automatic Agent Building",
     "tags": [
       "agent-library",
@@ -1678,7 +1678,7 @@
     "description": "Demonstrates how to monitor LLM interactions, tool usage, and errors using AgentOps.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_agentops.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Observability",
     "tags": [
       "monitoring",
@@ -1695,7 +1695,7 @@
     "description": "Explains how to unify API usage with documentation and code examples.",
     "url": "https://microsoft.github.io/autogen/docs/Use-Cases/enhanced_inference/#api-unification",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Enhanced Inferences",
     "tags": [
       "api",
@@ -1711,7 +1711,7 @@
     "description": "Demonstrates utility functions to manage API configurations more effectively.",
     "url": "https://microsoft.github.io/autogen/0.2/docs/topics/llm_configuration",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Enhanced Inferences",
     "tags": [
       "api",
@@ -1727,7 +1727,7 @@
     "description": "Introduces methods for tracking token usage and estimating costs for LLM interactions.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/agentchat_cost_token_tracking.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Enhanced Inferences",
     "tags": [
       "cost",
@@ -1744,7 +1744,7 @@
     "description": "Highlights cost-effective optimization techniques for improving code generation with LLMs.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/oai_completion.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Enhanced Inferences",
     "tags": [
       "optimization",
@@ -1760,7 +1760,7 @@
     "description": "Explains techniques to optimize LLM performance for solving mathematical problems.",
     "url": "https://github.com/microsoft/autogen/blob/0.2/notebook/oai_chatgpt_gpt4.ipynb",
     "urlType": "notebook",
-    "framework": "Autogen",
+    "framework": "AutoGen",
     "category": "Enhanced Inferences",
     "tags": [
       "optimization",
